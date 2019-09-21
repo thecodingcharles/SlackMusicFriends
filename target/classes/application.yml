@@ -1,0 +1,17 @@
+spring.main.allow-bean-definition-overriding: true
+
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId:     17d4368229574f1ba11007df1c1d401a
+      clientSecret: abf61072e963477792a139a0cf718d1e
+      accessTokenUri: https://accounts.spotify.com/api/token
+      userAuthorizationUri: https://accounts.spotify.com/authorize
+      tokenName: access_token
+      #grant-type: client_credentials
+      scope: user-read-currently-playing
+    resource:
+      userInfoUri: https://api.spotify.com/v1/me
